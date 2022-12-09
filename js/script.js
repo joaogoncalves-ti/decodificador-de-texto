@@ -2,7 +2,7 @@ function cripto(){
     var textoCampo = document.querySelector("#campoTexto");
     var texto = String(textoCampo.value);
 
-    var resposta =  texto.replace(/e/g, "enter").replace(/i/g,"imes").replace(/o/g,"ober").replace(/a/g,"ai").replace(/u/g,"ufat");
+    var resposta = texto.replace(/e/g, "enter").replace(/i/g,"imes").replace(/o/g,"ober").replace(/a/g,"ai").replace(/u/g,"ufat");
 
     
 

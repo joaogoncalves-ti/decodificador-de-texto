@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <img src="./img/icon.png" alt="alura" class="cabecalho-imagem">
+    </header>
+    <section>
+        <div class="quadro-de-texto">
+            <textarea id="campoTexto" cols="38" rows="9" placeholder="Digite sua mensagem"></textarea>
+            <textarea id="campoResposta" cols="12" rows="9" placeholder="Nenhuma mensagem encontrada"></textarea>
+        </div>
+        <div class="aviso">
+            <img  class="imagem-aviso" src="./img/atencao.png"/>
+            <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="botao">
+            <input type="button" class="botao-cripto" value="Criptografar" onclick="cripto()" >
+            <input type="button" class="botao-descripto" value="Descriptografar" onclick="descripto()">
+            <input type="button" class="botao-copiar" id="botaoCopiado" value="Copiar" onclick="copiar()">
+        </div>
+
+         </section>
+
+    <footer >
+        
+
+        <div class="redes">
+            <p>Redes Sociais</p>
+            <a  href="https://github.com/joao-gs">
+                <img  src="./img/github.png"/>
+            </a>
+            <a  href="https://www.linkedin.com/in/joao-gs/">
+                <img src="./img/linkedin.png"/>
+            </a>
+        </div>
+        <p class="copyright">&copy; Criado por João Gonçalves</p> 
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

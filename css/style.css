@@ -1,0 +1,169 @@
+body {
+    background: url(/img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.cabecalho {
+    height: 70px;
+}
+
+.cabecalho-imagem {
+    margin: 5px;
+    height: 70px;
+}
+
+.quadro-de-texto {
+    margin-left: 250px;
+    
+}
+
+#campoTexto {
+    
+    font-style: normal;
+    font-size: 32px;
+    background-color: rgba(128, 111, 111, 0.437);
+    border-radius: 10px;
+    color: rgb(58, 44, 44);
+    border-color: rgba(76, 65, 65, 0.147);
+    padding-left: 10px;
+}
+
+#campoTexto:focus{
+    outline: 0;
+    border-color: rgba(44, 38, 38, 0.147);
+    
+}
+
+
+
+#campoTexto::placeholder{
+    color: rgba(58, 44, 44, 0.56);
+    
+}
+
+#campoResposta::placeholder {
+    color: rgba(58, 44, 44, 0.56);
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+#campoResposta {
+    margin-left: 50px;
+    font-style: normal;
+    font-size: 32px;
+    background-color: rgba(128, 111, 111, 0.437);
+    border-radius: 10px;
+    color: rgb(58, 44, 44);
+    border-color: rgba(76, 65, 65, 0.147);
+
+}
+
+#campoResposta:focus {
+    outline: 0;
+    border-color: rgba(44, 38, 38, 0.147);
+    
+}
+
+.aviso {
+    display: flex;
+    margin-left: 250px;
+    color: rgb(58, 44, 44);
+    font-size: 18px;
+    align-items: center;
+
+}
+
+.imagem-aviso{
+    height: 30px;
+    margin-right: 10px;
+}
+
+.botao {
+    margin-left: 250px;
+    margin-top: 10px;
+    
+    
+}
+
+.botao-cripto {
+    padding: 10px 50px 10px 50px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgba(128, 111, 111, 0.437);
+    border-color: rgba(76, 65, 65, 0.147);
+    color: rgb(58, 44, 44);
+    font-size: 18px;
+    
+}
+
+.botao-cripto:active{
+    background-color: rgba(118, 102, 102, 0.437);
+    color: rgb(54, 41, 41);
+    border-color: rgba(61, 52, 52, 0.147);
+    
+    
+}
+
+.botao-descripto {
+    padding: 10px 50px 10px 50px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgba(128, 111, 111, 0.437);
+    border-color: rgba(76, 65, 65, 0.147);
+    color: rgb(58, 44, 44);
+    font-size: 18px;
+
+}
+
+.botao-descripto:active{
+    background-color: rgba(118, 102, 102, 0.437);
+    color: rgb(54, 41, 41);
+    border-color: rgba(61, 52, 52, 0.147);
+    
+    
+}
+
+.botao-copiar {
+    padding: 10px 50px 10px 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgba(128, 111, 111, 0.437);
+    border-color: rgba(76, 65, 65, 0.147);
+    color: rgb(58, 44, 44);
+    font-size: 18px;
+    margin-left: 50px;
+
+}
+
+
+.botao-copiar:active{
+    background-color: rgba(118, 102, 102, 0.437);
+    color: rgb(54, 41, 41);
+    border-color: rgba(61, 52, 52, 0.147);
+    
+    
+}
+
+.redes {
+    display: inline-block;
+    text-align: center;
+    margin-left: 20px;
+    color: rgb(58, 44, 44);
+    font-size: 18px;
+
+    
+    
+    
+}
+
+.copyright {
+    text-align: center;
+    
+    color: rgb(58, 44, 44);
+    font-size: 18px;
+    
+
+}

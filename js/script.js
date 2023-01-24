@@ -1,5 +1,5 @@
 function criptografar(){
-    var textoCampo = document.querySelector("#campoTexto");
+    var textoCampo = document.querySelector("#campoEntrada");
     var texto = String(textoCampo.value);
 
     var resposta = texto.replace(/e/g, "enter").replace(/i/g,"imes").replace(/o/g,"ober").replace(/a/g,"ai").replace(/u/g,"ufat");
@@ -16,17 +16,17 @@ function criptografar(){
 }
 
 function descriptografar(){
-    var textoCampo= document.querySelector("#campoTexto");
+    var textoCampo= document.querySelector("#campoEntrada");
     var texto= String(textoCampo.value);
 
     var resposta = texto.replace(/ai/g, "a").replace(/enter/g,"e").replace(/imes/g,"i").replace(/ober/g,"o").replace(/ufat/g,"u");
 
     if (campoResposta.innerHTML = resposta){
-        document.querySelector(".botao-descriptografar").value = "Descriptografado";
+        document.querySelector("#botao-descriptografar").value = "Descriptografado";
     }
 
     setInterval (function() {
-        document.querySelector(".botao-descriptografar").value = "Descriptografar";
+        document.querySelector("#botao-descriptografar").value = "Descriptografar";
     }, 3000);
 
 

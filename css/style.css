@@ -1,198 +1,135 @@
 body {
+    margin: 20px;
     background: url(../img/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
 }
 
 
-.cabecalho {
-    padding: 20px;
-}
 .cabecalho-imagem {
     height: 70px;
 }
 
 
-
 .conteudo {
+    margin: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    
-    
+    justify-content: center;    
 }
 
+.quadroEntrada {
+    margin-right: 10px;
+    width: 50%;
+   
+}
 
-
-#campoTexto {
-    
-    font-style: normal;
+.campo {
     font-size: 32px;
-    background-color: rgba(128, 111, 111, 0.437);
+    height: 200px;
+    width: 100%;
+    background-color: rgba(128, 111, 111, 0.137);
     border-radius: 10px;
     color: rgb(58, 44, 44);
     border-color: rgba(76, 65, 65, 0.147);
-    padding-left: 10px;
 }
 
-#campoTexto:focus{
+.campo:focus {
     outline: 0;
     border-color: rgba(44, 38, 38, 0.147);
-    
 }
 
 
-
-#campoTexto::placeholder{
+.campo::placeholder {
     color: rgba(58, 44, 44, 0.56);
-    
 }
 
-#campoResposta::placeholder {
-    color: rgba(58, 44, 44, 0.56);
-    padding-left: 30px;
-    padding-top: 80px;
+.quadroSaida{
+    width: 20%;
+    margin-left: 10px;
 }
 
-#campoResposta {
-    margin-left: 50px;
-    font-style: normal;
-    font-size: 32px;
-    background-color: rgba(128, 111, 111, 0.437);
-    border-radius: 10px;
-    color: rgb(58, 44, 44);
-    border-color: rgba(76, 65, 65, 0.147);
-
-}
-
-#campoResposta:focus {
-    outline: 0;
-    border-color: rgba(44, 38, 38, 0.147);
-    
-}
-
-.aviso {
+.avisoEntrada {
     display: flex;
-    width: 830px;
-    margin: 10px 0px 10px 0px;
-
-}
-
-
-.aviso-conteudo {
-    display: flex;
-    color: rgb(58, 44, 44);
-    font-size: 18px;
     align-items: center;
-
+    margin: 10px;
 }
 
-.aviso-imagem{
-    height: 30px;
+.avisoEntrada img {
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
 }
 
 .botao {
-    display: flex;
-    
-    margin: 10px 0px 10px 0px;
-    
-    
-}
-
-
-
-.botao-criptografar {
-    padding: 10px 50px 10px 50px;
-    width: 285px;
+    padding: 10px 30px;
     border-radius: 10px;
     background-color: rgba(128, 111, 111, 0.437);
     border-color: rgba(76, 65, 65, 0.147);
     color: rgb(58, 44, 44);
-    font-size: 18px;
-    margin-right: 10px;
-    
 }
 
-.botao-criptografar:active{
-    background-color: rgba(118, 102, 102, 0.437);
-    color: rgb(54, 41, 41);
-    border-color: rgba(61, 52, 52, 0.147);
-    
-    
+#botaoCopiar {
+    margin-top: 38px;
 }
-
-.botao-descriptografar {
-    padding: 10px 50px 10px 50px;
-    width: 290px;
-    border-radius: 10px;
-    background-color: rgba(128, 111, 111, 0.437);
-    border-color: rgba(76, 65, 65, 0.147);
-    color: rgb(58, 44, 44);
-    font-size: 18px;
-    margin-left: 10px;
-
-}
-
-.botao-descriptografar:active{
-    background-color: rgba(118, 102, 102, 0.437);
-    color: rgb(54, 41, 41);
-    border-color: rgba(61, 52, 52, 0.147);
-    
-    
-}
-
-.botao-copiar {
-    padding: 10px 50px 10px 50px;
-    width: 200px;
-    border-radius: 10px;
-    background-color: rgba(128, 111, 111, 0.437);
-    border-color: rgba(76, 65, 65, 0.147);
-    color: rgb(58, 44, 44);
-    font-size: 18px;
-    margin-left: 60px;
-
-}
-
-
-.botao-copiar:active{
-    background-color: rgba(118, 102, 102, 0.437);
-    color: rgb(54, 41, 41);
-    border-color: rgba(61, 52, 52, 0.147);
-    
-    
-}
-
 
 .rodape {
-    padding: 20px;
-}
-
-.redes {
-    display: inline-block;
+    margin-top: 50px;
     text-align: center;
-    color: rgb(58, 44, 44);
-    font-size: 18px;
-    margin-top: 20px;
-
-
-}
-
-.copyright {
-    text-align: center;
-    color: rgb(58, 44, 44);
-    font-size: 18px;
-    
-
 }
 
 
+@media (max-width:720px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
 
-@media (max-width:480px){
-    .quadro-de-texto {
+    .botaoEntrada {
+        margin-bottom: 30px;
+        text-align: center;
+    }
 
+    .avisoEntrada{
+        justify-content: center;
+    }
+
+    .botaoSaida {
+        text-align: center;
+    }
+
+    .quadroEntrada {
+        width: 80%;
+        margin: 0px;
+    }
+
+    .quadroSaida {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:480px) {
+    .quadroEntrada {
+        width: 100%;
+    }
+
+    .quadroSaida {
+        width: 100%;
+    }
+
+    .botaoEntrada{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #botao-criptografar {
+        margin-bottom: 10px;
+        padding: 10px 40px;
+    }
+
+    .campo {
+        height: 150px;
     }
 }

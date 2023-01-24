@@ -5,33 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de Texto</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
     <header class="cabecalho">
         <img src="./img/icon.png" alt="alura" class="cabecalho-imagem">
     </header>
 
     <section class="conteudo">
-        <div class="quadro-de-texto">
-            <textarea id="campoTexto" cols="38" rows="9" placeholder="Digite sua mensagem"></textarea>
-            <textarea id="campoResposta" cols="12" rows="9" placeholder="Nenhuma mensagem encontrada"></textarea>
-        </div>
-       
-        <div class="aviso">
-            <div class="aviso-conteudo">
-                <img  class="aviso-imagem" src="./img/atencao.png"/>
-                <p>Apenas letras minúsculas e sem acento. </p>
+
+        <div class="quadroEntrada">
+            <textarea class="campo" id="campoEntrada" placeholder="Digite sua mensagem"></textarea>
+            <div class="avisoEntrada">
+                <img src="./img/atencao.png" alt="atenção">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="botaoEntrada">
+                <input type="button" class="botao" id="botao-criptografar" value="Criptografar" onclick="criptografar()" >
+                <input type="button" class="botao"  id="botao-descriptografar" value="Descriptografar" onclick="descriptografar()">
             </div>
         </div>
-        
-        <div class="botao">
-            <input type="button" class="botao-criptografar" id="botao-criptografar" value="Criptografar" onclick="criptografar()" >
-            <input type="button" class="botao-descriptografar"  id="botao-descriptografar" value="Descriptografar" onclick="descriptografar()">
-            <input type="button" class="botao-copiar" id="botaoCopiar" value="Copiar" onclick="copiar()">
+
+        <div class="quadroSaida">
+            <textarea  class="campo" id="campoResposta" placeholder="Nenhuma mensagem encontrada"></textarea>
+            <div class="botaoSaida">
+                <input type="button" class="botao" id="botaoCopiar" value="Copiar" onclick="copiar()">
+            </div>
         </div>
 
     </section>
